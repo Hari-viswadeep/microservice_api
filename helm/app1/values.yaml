@@ -1,0 +1,8 @@
+replicaCount: 1
+image:
+  repository: app1
+  tag: latest
+  pullPolicy: IfNotPresent  # Use 'Never' to use the locally built image
+service:
+  type: ClusterIP
+  port: 5001
